@@ -1,14 +1,14 @@
 import 'dart:io';
 import 'dart:convert';
 void main(List<String> args) {
-  var text= "My first for loop";
-  var result=0,r=0;
+  var text = "My first for loop";
+  var result = 0,r = 0;
 
   //for loop
   
-  for(var i=0;i<=100;i++){
+  for(var i = 0;i <= 100;i++){
     print(i);
-    result+=i;
+    result += i;
     print("$i - Result: $result");
   }
   print(result);
@@ -17,11 +17,11 @@ void main(List<String> args) {
   var line=stdin.readLineSync(encoding: utf8);
   var qtd=int.parse(line ?? "0");
 
-  for(var i=0;i<qtd;i++){
+  for(var i = 0;i < qtd;i++){
     print("Number: ");
-    line=stdin.readLineSync(encoding: utf8);
-    var number=int.parse(line ?? "0");
-    r+=number;
+    line = stdin.readLineSync(encoding: utf8);
+    var number = int.parse(line ?? "0");
+    r += number;
     print("$i - Result: $r");
   }
 
@@ -31,13 +31,13 @@ void main(List<String> args) {
 
   var names=["John","Mary","Peter","Sue","John"];
 
-  for(var i=0;i<names.length;i++){
+  for(var i = 0;i < names.length;i++){
     print(names[i]);
   }
 
   //for each - in
 
-  var numbers=[1,5,9,50,85,45,90,74];
+  var numbers = [1,5,9,50,85,45,90,74];
   var acc = 0;
 
   for(var n in numbers){
@@ -58,9 +58,9 @@ void main(List<String> args) {
 
   //while loop
 
-  var count = 0,total=10;
+  var count = 0,total = 10;
 
-  while(count<total){
+  while(count < total){
     print(count);
     count++; // add 1 to count, so it will stop when count = 10
   }

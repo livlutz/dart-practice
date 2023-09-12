@@ -34,10 +34,10 @@ int sum(int number1, int number2){
 //recursive function
 
 int factorial(int number){
-  if(number==1){
+  if(number == 1){
     return 1;
   }
-  return number*factorial(number-1);
+  return number*factorial(number - 1);
 }
 
 //functions with optional parameters
@@ -47,7 +47,7 @@ int factorial(int number){
 */
 void printName(String name,{String? LastName}){
   print("My name is: $name");
-  if(LastName!=null){
+  if(LastName != null){
     print("My last name is: $LastName");
   }
 }
