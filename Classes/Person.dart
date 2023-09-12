@@ -1,5 +1,6 @@
 
-class Person{
+//abstract class cannot be instantiated
+abstract class Person{
 
   //_ means private
   String _name = "";
